@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vendora — Multi-Vendor Marketplace</title>
+<meta name="description" content="Vendora is a multi-vendor marketplace bringing independent shops together in one storefront. Browse products by category, compare vendors, and check out once.">
+<meta name="theme-color" content="#10151F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2310151F'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='19' font-weight='700' fill='%23E8A33D' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#/" aria-label="Vendora home">
+      <span class="brand-mark">V</span>
+      <span class="brand-name">Vendora</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a class="nav-link" data-nav="home" href="#/">Home</a>
+      <a class="nav-link" data-nav="shop" href="#/shop">Shop</a>
+      <a class="nav-link" data-nav="vendors" href="#/vendors">Vendors</a>
+      <a class="nav-link" href="#/shop?cat=home">Home &amp; Living</a>
+      <a class="nav-link" href="#/shop?cat=electronics">Electronics</a>
+    </nav>
+
+    <div class="nav-right">
+      <form class="nav-search" id="navSearchForm" role="search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input type="search" id="navSearchInput" placeholder="Search products…" aria-label="Search products">
+      </form>
+
+      <a class="cart-btn" href="#/cart" aria-label="View cart">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.4 12.2a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.6L21 7H6"/></svg>
+        <span class="cart-count" data-empty="true">0</span>
+      </a>
+
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#/">Home</a>
+  <a href="#/shop">Shop all products</a>
+  <a href="#/vendors">Vendors</a>
+  <a href="#/shop?cat=electronics">Electronics</a>
+  <a href="#/shop?cat=home">Home &amp; Living</a>
+  <a href="#/shop?cat=fashion">Fashion</a>
+  <a href="#/shop?cat=beauty">Beauty</a>
+  <a href="#/shop?cat=sports">Sports &amp; Outdoors</a>
+  <a href="#/shop?cat=stationery">Stationery</a>
+  <a href="#/cart">Cart</a>
+  <a class="btn btn-primary btn-block" href="#/shop">Start shopping</a>
+</div>
+
+<!-- ============ PAGES ============ -->
+<main>
+  <div class="page" id="page-home"></div>
+  <div class="page" id="page-shop"></div>
+  <div class="page" id="page-vendors"></div>
+  <div class="page" id="page-vendor"></div>
+  <div class="page" id="page-product"></div>
+  <div class="page" id="page-cart"></div>
+  <div class="page" id="page-checkout"></div>
+  <div class="page" id="page-confirm"></div>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="#/">
+          <span class="brand-mark">V</span>
+          <span class="brand-name">Vendora</span>
+        </a>
+        <p class="footer-about">A multi-vendor marketplace connecting independent shops with customers across Kenya. One storefront, many sellers, a single checkout.</p>
+        <div class="socials">
+          <a class="social" href="#/" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a class="social" href="#/" aria-label="X">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7 8 8.2 12h-6.4l-5-7.3L5.9 22H2.8l7.5-8.6L2.4 2h6.6l4.5 6.6zM17.8 20.2h1.7L7.3 3.7H5.5z"/></svg>
+          </a>
+          <a class="social" href="#/" aria-label="Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1z"/></svg>
+          </a>
+          <a class="social" href="#/" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4.5 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM3 9h3v12H3zM9 9h2.9v1.7h.1c.4-.8 1.5-1.9 3.2-1.9 3.4 0 4 2.2 4 5.1V21h-3v-6.2c0-1.5 0-3.4-2-3.4s-2.3 1.6-2.3 3.3V21H9z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#/shop">All products</a></li>
+          <li><a href="#/shop?cat=electronics">Electronics</a></li>
+          <li><a href="#/shop?cat=home">Home &amp; Living</a></li>
+          <li><a href="#/shop?cat=fashion">Fashion</a></li>
+          <li><a href="#/shop?cat=beauty">Beauty</a></li>
+          <li><a href="#/shop?cat=sports">Sports &amp; Outdoors</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Marketplace</h4>
+        <ul>
+          <li><a href="#/vendors">All vendors</a></li>
+          <li><a href="#/cart">Your cart</a></li>
+          <li><a href="#/checkout">Checkout</a></li>
+          <li><a href="#/">Delivery &amp; returns</a></li>
+          <li><a href="#/">Sell on Vendora</a></li>
+          <li><a href="#/">Help centre</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@vendora.co.ke">hello@vendora.co.ke</a></li>
+          <li><a href="tel:+254700123456">+254 700 123 456</a></li>
+          <li style="color:rgba(255,255,255,.6);font-size:.87rem;line-height:1.6">Westlands Square, 3rd Floor<br>Ring Road, Nairobi, Kenya</li>
+          <li style="color:rgba(255,255,255,.6);font-size:.87rem">Mon–Sat, 9:00 – 18:00</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Vendora Marketplace. Student project — sample data only.</span>
+      <span style="display:flex;gap:18px;flex-wrap:wrap">
+        <a href="#/">Privacy</a>
+        <a href="#/">Terms</a>
+        <a href="#/">Cookies</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+<script>
+  // nav search → shop page
+  document.getElementById("navSearchForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var q = document.getElementById("navSearchInput").value.trim();
+    location.hash = q ? "#/shop?q=" + encodeURIComponent(q) : "#/shop";
+  });
+</script>
+</body>
+</html>

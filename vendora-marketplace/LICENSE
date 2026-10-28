@@ -1,0 +1,45 @@
+MIT License
+
+Copyright (c) 2026 Vendora Marketplace — student project
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+IMPORTANT NOTES FOR THIS PROJECT
+================================
+
+1. SAMPLE DATA
+   All vendors, products, prices, ratings and reviews in this project are
+   FICTIONAL and were written as sample data for an academic exercise.
+   No vendor named in the dataset is a real business, and no review is a
+   real customer review.
+
+2. IMAGES
+   The photographs in the images/ directory are stock images sourced from
+   third-party retailers and stock libraries. They are used here as
+   placeholders to demonstrate the layout. They are NOT covered by the MIT
+   licence above. If you publish this project publicly or commercially,
+   replace them with your own photographs or images you have licensed.
+
+3. CHECKOUT DEMO
+   The checkout form validates input and calculates totals entirely in the
+   browser. It does not process payments and does not transmit data to any
+   server. Do not use it to collect real customer information without
+   building a proper backend.

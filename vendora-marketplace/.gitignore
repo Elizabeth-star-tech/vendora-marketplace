@@ -1,0 +1,30 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node (only if you add tooling later)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Build output
+dist/
+build/
+.cache/
+
+# Logs
+*.log
